@@ -1,2 +1,1 @@
-# SpringMVC-Hibernate
-# Simple CRUD application
+# Simple CRUD application with SpringMVC and Hibernate
