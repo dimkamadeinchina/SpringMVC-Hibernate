@@ -36,13 +36,13 @@ public class HibernateUtil {
         return sessionFactory.getCurrentSession().createQuery(" FROM "+entityClass.getName()).list();
     }
 
-    @SuppressWarnings("rawtypes")
-    public <T> List fetchAll(String query) {
-        return sessionFactory.getCurrentSession().createSQLQuery(query).list();
-    }
-
     @SuppressWarnings("unchecked")
     public <T> T fetchById(Serializable id, Class<T> entityClass) {
         return (T)sessionFactory.getCurrentSession().get(entityClass, id);
+    }
+
+    @SuppressWarnings("rawtypes")
+    public <T> List sortBy(String query){
+        return sessionFactory.getCurrentSession().createSQLQuery(query).list();
     }
 }

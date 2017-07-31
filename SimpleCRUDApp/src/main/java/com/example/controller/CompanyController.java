@@ -50,4 +50,10 @@ public class CompanyController {
             companyService.deleteCompany(id);
         return new ModelAndView("redirect:getAllCompanies");
     }
+
+    @RequestMapping("sortCompanies")
+    public ModelAndView sortCompanies(@RequestParam("sort") String sort) {
+        List<Company> companyList = companyService.getAllCompanies(sort);
+        return new ModelAndView("companies", "companyList", companyList);
+    }
 }

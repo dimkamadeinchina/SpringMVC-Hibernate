@@ -41,6 +41,14 @@
                 <table class="table table-hover table-bordered">
                     <thead style="background-color: #bce8f1;">
                     <tr>
+                        <th><a href="sortCompanies?sort=id">Sort by ID</a></th>
+                        <th><a href="sortCompanies?sort=name">Sort by name</a></th>
+                        <th><a href="sortCompanies?sort=<c:out value='min_value'/>">Sort by min</a></th>
+                        <th><a href="sortCompanies?sort=<c:out value='max_value'/>">Sort by max</a></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
                         <th>Id</th>
                         <th>Name</th>
                         <th>Min</th>

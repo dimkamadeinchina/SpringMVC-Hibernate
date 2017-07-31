@@ -17,10 +17,10 @@ public class Company implements Serializable {
     private String name;
 
     @Column(name = "min_value")
-    private int minValue;
+    private long minValue;
 
     @Column(name = "max_value")
-    private int maxValue;
+    private long maxValue;
 
     public Company(){
     }
@@ -41,19 +41,20 @@ public class Company implements Serializable {
         this.name = name;
     }
 
-    public int getMinValue() {
+    public long getMinValue() {
         return minValue;
     }
 
-    public void setMinValue(int minValue) {
+    public void setMinValue(long minValue) {
         this.minValue = minValue;
     }
 
-    public int getMaxValue() {
+    public long getMaxValue() {
         return maxValue;
     }
 
-    public void setMaxValue(int maxValue) {
+    public void setMaxValue(long maxValue) {
         this.maxValue = maxValue;
     }
+
 }

@@ -1,9 +1,3 @@
-Created by IntelliJ IDEA.
-User: ДИМА
-Date: 30.07.2017
-Time: 20:28
-To change this template use File | Settings | File Templates.
---%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
@@ -15,7 +9,7 @@ To change this template use File | Settings | File Templates.
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Employee Information</title>
+    <title>Company Information</title>
     <!-- Bootstrap CSS -->
     <%-- <link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet"> --%>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">

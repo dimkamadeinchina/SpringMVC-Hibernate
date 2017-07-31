@@ -11,4 +11,5 @@ public interface CompanyDAO {
     public void deleteCompany(long id);
     public List<Company> getAllCompanies();
     public Company getCompany(long id);
+    public List<Company> sortBy(String sort);
 }

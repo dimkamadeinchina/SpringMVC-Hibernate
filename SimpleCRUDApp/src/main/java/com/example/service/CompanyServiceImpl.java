@@ -34,4 +34,8 @@ public class CompanyServiceImpl implements CompanyService {
     public Company getCompany(long id) {
         return companyDAOImpl.getCompany(id);
     }
+    @Override
+    public  List<Company> getAllCompanies(String sort){
+        return companyDAOImpl.sortBy(sort);
+    }
 }
